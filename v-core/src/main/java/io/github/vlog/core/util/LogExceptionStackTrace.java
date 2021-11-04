@@ -5,8 +5,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * className：LogExceptionStackTrace
- * description：获取堆栈信息字符串工具类
+ * className：LogExceptionStackTrace description：获取堆栈信息字符串工具类
  */
 public class LogExceptionStackTrace {
 

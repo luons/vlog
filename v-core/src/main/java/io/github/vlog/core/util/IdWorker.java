@@ -1,8 +1,7 @@
 package io.github.vlog.core.util;
 
 /**
- * className：IdWorker
- * description：基于雪花算法的ID生成器
+ * className：IdWorker description：基于雪花算法的ID生成器
  */
 public class IdWorker {
 
@@ -30,19 +29,6 @@ public class IdWorker {
     //记录产生时间毫秒数，判断是否是同1毫秒
     private long lastTimestamp = -1L;
 
-    public long getWorkerId() {
-        return workerId;
-    }
-
-    public long getDataCenterId() {
-        return dataCenterId;
-    }
-
-    public long getTimestamp() {
-        return System.currentTimeMillis();
-    }
-
-
     public IdWorker(long workerId, long dataCenterId, long sequence) {
         // 5 bit 最多只能有 31 个数字，机器Id最多只能是 32 以内
         long maxWorkerId = ~(-1L << workerIdBits);
@@ -57,6 +43,25 @@ public class IdWorker {
         this.workerId = workerId;
         this.dataCenterId = dataCenterId;
         this.sequence = sequence;
+    }
+
+    public static void main(String[] args) {
+        IdWorker worker = new IdWorker(1, 1, 1);
+        for (int i = 0; i < 22; i++) {
+            System.out.println(worker.nextId());
+        }
+    }
+
+    public long getWorkerId() {
+        return workerId;
+    }
+
+    public long getDataCenterId() {
+        return dataCenterId;
+    }
+
+    public long getTimestamp() {
+        return System.currentTimeMillis();
     }
 
     // 当前这台机器上的 snowflake 算法程序生成一个全局唯一的 Id
@@ -93,7 +98,6 @@ public class IdWorker {
                 (workerId << workerIdShift) | sequence;
     }
 
-
     private long tilNextMillis(long lastTimestamp) {
 
         long timestamp = timeNowTs();
@@ -107,13 +111,5 @@ public class IdWorker {
     // 获取当前时间戳
     private long timeNowTs() {
         return System.currentTimeMillis();
-    }
-
-
-    public static void main(String[] args) {
-        IdWorker worker = new IdWorker(1, 1, 1);
-        for (int i = 0; i < 22; i++) {
-            System.out.println(worker.nextId());
-        }
     }
 }

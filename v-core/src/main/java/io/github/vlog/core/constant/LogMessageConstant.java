@@ -33,29 +33,25 @@ public class LogMessageConstant {
     public final static String DELIM_STR = "{}";
 
     public final static String TRACE_ID = "traceId";
-
-    /**
-     * 1 高性能模式，2 全信息模式
-     */
-    public static int RUN_MODEL = 1;
-
-    /**
-     * 默认扩展 可变参数
-     */
-    public static String EXPAND = "V_LOG";
     /**
      * 默认扩展
      */
     public final static String DEFAULT_EXPAND = "V_LOG";
-
     /**
      * Sleuth 扩展
      */
     public final static String SLEUTH_EXPAND = "sleuth";
-
     /**
      * 所有支持的扩展
      */
     public final static List<String> EXPANDS = Arrays.asList("V_LOG", "sleuth");
+    /**
+     * 1 高性能模式，2 全信息模式
+     */
+    public static int RUN_MODEL = 1;
+    /**
+     * 默认扩展 可变参数
+     */
+    public static String EXPAND = "V_LOG";
 
 }

@@ -4,8 +4,7 @@ import com.lmax.disruptor.RingBuffer;
 import io.github.vlog.core.dto.BaseLogMessage;
 
 /**
- * className：LogMessageProducer
- * description： 日志生产
+ * className：LogMessageProducer description： 日志生产
  */
 public class LogMessageProducer {
 

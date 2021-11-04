@@ -6,12 +6,15 @@ import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 /**
- * className：KafkaProducerClient
- * description：kafka Producer instance
+ * className：KafkaProducerClient description：kafka Producer instance
  */
 public class KafkaProducerClient extends AbstractClient {
     private static KafkaProducerClient instance;
     private KafkaProducerPool kafkaProducerPool;
+
+    private KafkaProducerClient(String hosts) {
+        this.kafkaProducerPool = new KafkaProducerPool(hosts);
+    }
 
     public static KafkaProducerClient getInstance(String hosts) {
         if (instance == null) {
@@ -22,10 +25,6 @@ public class KafkaProducerClient extends AbstractClient {
             }
         }
         return instance;
-    }
-
-    private KafkaProducerClient(String hosts) {
-        this.kafkaProducerPool = new KafkaProducerPool(hosts);
     }
 
     @Override

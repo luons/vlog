@@ -5,8 +5,7 @@ import com.alibaba.fastjson.JSON;
 import java.util.*;
 
 /**
- * className：GfJsonUtil
- * description：fastjson工具类
+ * className：GfJsonUtil description：fastjson工具类
  */
 public abstract class GfJsonUtil {
 

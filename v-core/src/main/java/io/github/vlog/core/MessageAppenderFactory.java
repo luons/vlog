@@ -16,10 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 public class MessageAppenderFactory {
 
-    private static Boolean logOutPut = true;
-
-    private static int exceptionCount = 0;
-
     /**
      * 异常超过maxExceptionCount不在输送日志到队列
      */
@@ -29,7 +25,8 @@ public class MessageAppenderFactory {
      * 当下游异常的时候，状态缓存时间
      */
     private final static Cache<String, Boolean> cache = CacheBuilder.newBuilder().expireAfterWrite((30), TimeUnit.SECONDS).build();
-
+    private static Boolean logOutPut = true;
+    private static int exceptionCount = 0;
     /**
      * 设置阻塞队列为5000，防止OOM
      */

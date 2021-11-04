@@ -11,8 +11,7 @@ import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * className：KafkaAppender
- * description：KafkaAppender 如果使用kafka作为队列用这个KafkaAppender输出
+ * className：KafkaAppender description：KafkaAppender 如果使用kafka作为队列用这个KafkaAppender输出
  */
 
 @Data

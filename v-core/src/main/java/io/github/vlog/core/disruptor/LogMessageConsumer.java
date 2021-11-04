@@ -8,8 +8,7 @@ import io.github.vlog.core.dto.RunLogMessage;
 import io.github.vlog.core.util.GfJsonUtil;
 
 /**
- * className：LogMessageConsumer
- * description： 日志消费
+ * className：LogMessageConsumer description： 日志消费
  */
 public class LogMessageConsumer implements WorkHandler<LogEvent> {
 

@@ -2,8 +2,6 @@ package io.github.vlog.core;
 
 import lombok.Data;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 @Data
 public class TraceMessage {
 

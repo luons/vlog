@@ -3,11 +3,8 @@ package io.github.vlog.core;
 import lombok.Data;
 
 /**
- * className：LogMessage
- * appName 应用名称用来区分日志属于哪个应用
- * serverName 应用运行所属IP地址
- * traceId 应用traceId，配置了拦截器才能自动生成
- * logType 日志类型，区分运行日志还是链路日志
+ * className：LogMessage appName 应用名称用来区分日志属于哪个应用 serverName 应用运行所属IP地址 traceId 应用traceId，配置了拦截器才能自动生成 logType
+ * 日志类型，区分运行日志还是链路日志
  */
 @Data
 public class LogMessage {

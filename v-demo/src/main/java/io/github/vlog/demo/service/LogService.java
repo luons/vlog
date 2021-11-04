@@ -27,7 +27,7 @@ public class LogService {
     }
 
     @Trace
-    public void test2(String data,Long time,Integer v2,Double d, Date d4) {
+    public void test2(String data, Long time, Integer v2, Double d, Date d4) {
         logger.info("LogService test2 ==>>{}", data);
     }
 
