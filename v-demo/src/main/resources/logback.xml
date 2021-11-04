@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+
+  <property name="LOG_HOME" value="./logs"/>
+
+  <!-- info日志 -->
+  <appender name="FILE_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder>
+      <pattern>
+        [ %-5level][%date{yyyy-MM-dd'T'HH:mm:ss.SSSZ}][%logger{96}:%line] - %msg%n
+      </pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOG_HOME}/log-info.log.%d{yyyyMMdd}</fileNamePattern>
+      <maxHistory>180</maxHistory>
+      <totalSizeCap>500MB</totalSizeCap>
+    </rollingPolicy>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>INFO</level>
+      <onMatch>ACCEPT</onMatch>
+      <onMismatch>DENY</onMismatch>
+    </filter>
+    <prudent>true</prudent>
+  </appender>
+
+  <appender name="V_LOG" class="io.github.vlog.logback.appender.RollingFileTraceAppender">
+    <appName>V_LOG</appName>
+    <packageName>io.github.vlog.demo</packageName>
+    <encoder>
+      <pattern>
+        [ %-5level][%date{yyyy-MM-dd'T'HH:mm:ss.SSSZ}][%logger{96}:%line] - %msg%n
+      </pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOG_HOME}/logWatch.log.%d{yyyyMMdd}</fileNamePattern>
+      <maxHistory>180</maxHistory>
+      <totalSizeCap>500MB</totalSizeCap>
+    </rollingPolicy>
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+      <level>INFO</level>
+      <onMatch>ACCEPT</onMatch>
+      <onMismatch>DENY</onMismatch>
+    </filter>
+    <prudent>true</prudent>
+  </appender>
+
+  <appender name="plumelog" class="io.github.vlog.logback.appender.KafkaAppender">
+    <appName>plumelog</appName>
+    <kafkaHosts>localhost:9092</kafkaHosts>
+  </appender>
+
+  <!-- 日志输出级别 -->
+  <root level="INFO">
+    <appender-ref ref="V_LOG"/>
+    <appender-ref ref="FILE_INFO"/>
+  </root>
+</configuration>
