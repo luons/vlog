@@ -2,7 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <groupId>io.github.vlog</groupId>
+    <groupId>io.github.luons.vlog</groupId>
     <artifactId>vlog</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
@@ -28,7 +28,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.github.vlog</groupId>
+      <groupId>io.github.luons.vlog</groupId>
       <artifactId>v-logback</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>

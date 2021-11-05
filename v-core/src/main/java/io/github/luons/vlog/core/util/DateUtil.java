@@ -1,0 +1,599 @@
+package io.github.luons.vlog.core.util;
+
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+public class DateUtil {
+
+    // 格式到年
+    public static final String DATE_FORMAT_YYYY = "yyyy";
+
+    // 格式到年月
+    public static final String DATE_FORMAT_YYYYMM = "yyyyMM";
+
+    // 格式到年-月
+    public static final String DATE_FORMAT_YYYY_MM = "yyyy-MM";
+
+    // 格式到年月日
+    public static final String DATE_FORMAT_YYYYMMDD = "yyyyMMdd";
+
+    // 格式到年-月-日
+    public static final String DATE_FORMAT_YYYY_MM_DD = "yyyy-MM-dd";
+
+    // 格式到年.月.日
+    public static final String DATE_FORMAT_POINTYYYYMMDD = "yyyy.MM.dd";
+
+    // 格式到年月日时分
+    public static final String DATE_FORMAT_YYYYMMDDHHmm = "yyyyMMddHHmm";
+
+    // 格式到年月日 时分
+    public static final String DATE_TIME_FORMAT_YYYYMMDD_HH_MI = "yyyyMMdd HH:mm";
+
+    // 格式到年-月-日 时:分
+    public static final String DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI = "yyyy-MM-dd HH:mm";
+
+    // 格式到年月日时分秒
+    public static final String DATE_TIME_FORMAT_YYYYMMDDHHMISS = "yyyyMMddHHmmss";
+
+    // 格式到年-月-日 时:分:秒
+    public static final String DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI_SS = "yyyy-MM-dd HH:mm:ss";
+
+    // 格式到年月日时分秒毫秒
+    public static final String DATE_TIME_FORMAT_YYYYMMDDHHMISSSSS = "yyyyMMddHHmmssSSS";
+
+    // 格式到月-日 时:分
+    public static final String DATE_FORMAT_MMDDHHMI = "MM-dd HH:mm";
+
+
+    /* ************工具方法***************   */
+    public static Integer getYear(Date date) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        return cal.get(Calendar.YEAR);
+    }
+
+
+    public static Integer getMonth(Date date) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        return cal.get(Calendar.MONTH) + 1;
+    }
+
+
+    public static Integer getDay(Date date) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int day = cal.get(Calendar.DATE);//获取日
+        return day;
+    }
+
+
+    public static String parseDateToStr(Date time, String timeFormat) {
+        DateFormat dateFormat = new SimpleDateFormat(timeFormat);
+        return dateFormat.format(time);
+    }
+
+
+    public static String parseTimestampToStr(Timestamp timestamp, String timeFormat) {
+        SimpleDateFormat df = new SimpleDateFormat(timeFormat);
+        return df.format(timestamp);
+    }
+
+
+    public static String parseDateToStr(Date time, String timeFormat, final Date defaultValue) {
+        try {
+            DateFormat dateFormat = new SimpleDateFormat(timeFormat);
+            return dateFormat.format(time);
+        } catch (Exception e) {
+            if (defaultValue != null)
+                return parseDateToStr(defaultValue, timeFormat);
+            else
+                return parseDateToStr(new Date(), timeFormat);
+        }
+    }
+
+    /**
+     * 格式化Date时间
+     *
+     * @param time         Date类型时间
+     * @param timeFormat   String类型格式
+     * @param defaultValue 默认时间值String类型
+     * @return 格式化后的字符串
+     */
+    public static String parseDateToStr(Date time, String timeFormat, final String defaultValue) {
+        try {
+            DateFormat dateFormat = new SimpleDateFormat(timeFormat);
+            return dateFormat.format(time);
+        } catch (Exception e) {
+            return defaultValue;
+        }
+    }
+
+
+    public static Date parseStrToDate(String time, String timeFormat) {
+        if (time == null || time.equals("")) {
+            return null;
+        }
+
+        Date date = null;
+        try {
+            DateFormat dateFormat = new SimpleDateFormat(timeFormat);
+            date = dateFormat.parse(time);
+        } catch (Exception e) {
+
+        }
+        return date;
+    }
+
+
+    public static Date parseStrToDate(String strTime, String timeFormat, Date defaultValue) {
+        try {
+            DateFormat dateFormat = new SimpleDateFormat(timeFormat);
+            return dateFormat.parse(strTime);
+        } catch (Exception e) {
+            return defaultValue;
+        }
+    }
+
+    public static Date strToDate(String strTime) {
+        if (strTime == null || strTime.trim().length() <= 0)
+            return null;
+
+        Date date = null;
+        List<String> list = new ArrayList<String>(0);
+
+        list.add(DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI_SS);
+        list.add(DATE_TIME_FORMAT_YYYYMMDDHHMISSSSS);
+        list.add(DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI);
+        list.add(DATE_TIME_FORMAT_YYYYMMDD_HH_MI);
+        list.add(DATE_TIME_FORMAT_YYYYMMDDHHMISS);
+        list.add(DATE_FORMAT_YYYY_MM_DD);
+        list.add(DATE_FORMAT_YYYYMMDD);
+        list.add(DATE_FORMAT_YYYY_MM);
+        list.add(DATE_FORMAT_YYYYMM);
+        list.add(DATE_FORMAT_YYYY);
+
+
+        for (Iterator iter = list.iterator(); iter.hasNext(); ) {
+            String format = (String) iter.next();
+            if (strTime.indexOf("-") > 0 && format.indexOf("-") < 0)
+                continue;
+            if (strTime.indexOf("-") < 0 && format.indexOf("-") > 0)
+                continue;
+            if (strTime.length() > format.length())
+                continue;
+            date = parseStrToDate(strTime, format);
+            if (date != null)
+                break;
+        }
+
+        return date;
+    }
+
+
+    public static List<String> getMonthListOfDate(String beginDateStr, String endDateStr) {
+        // 指定要解析的时间格式
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM");
+        // 返回的月份列表
+        String sRet = "";
+
+        // 定义一些变量
+        Date beginDate = null;
+        Date endDate = null;
+
+        GregorianCalendar beginGC = null;
+        GregorianCalendar endGC = null;
+        List<String> list = new ArrayList<String>();
+
+        try {
+            // 将字符串parse成日期
+            beginDate = f.parse(beginDateStr);
+            endDate = f.parse(endDateStr);
+
+            // 设置日历
+            beginGC = new GregorianCalendar();
+            beginGC.setTime(beginDate);
+
+            endGC = new GregorianCalendar();
+            endGC.setTime(endDate);
+
+            // 直到两个时间相同
+            while (beginGC.getTime().compareTo(endGC.getTime()) <= 0) {
+                sRet = beginGC.get(Calendar.YEAR) + "-"
+                        + (beginGC.get(Calendar.MONTH) + 1);
+                list.add(sRet);
+                // 以月为单位，增加时间
+                beginGC.add(Calendar.MONTH, 1);
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    public static List<String> getDayListOfDate(String beginDateStr, String endDateStr) {
+        // 指定要解析的时间格式
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+
+        // 定义一些变量
+        Date beginDate = null;
+        Date endDate = null;
+
+        Calendar beginGC = null;
+        Calendar endGC = null;
+        List<String> list = new ArrayList<String>();
+
+        try {
+            // 将字符串parse成日期
+            beginDate = f.parse(beginDateStr);
+            endDate = f.parse(endDateStr);
+
+            // 设置日历
+            beginGC = Calendar.getInstance();
+            beginGC.setTime(beginDate);
+
+            endGC = Calendar.getInstance();
+            endGC.setTime(endDate);
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+            // 直到两个时间相同
+            while (beginGC.getTime().compareTo(endGC.getTime()) <= 0) {
+
+                list.add(sdf.format(beginGC.getTime()));
+                // 以日为单位，增加时间
+                beginGC.add(Calendar.DAY_OF_MONTH, 1);
+            }
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    public static List<Integer> getYearListOfYears(int before, int behind) {
+        if (before < 0 || behind < 0) {
+            return null;
+        }
+        List<Integer> list = new ArrayList<Integer>();
+        Calendar c = null;
+        c = Calendar.getInstance();
+        c.setTime(new Date());
+        int currYear = Calendar.getInstance().get(Calendar.YEAR);
+
+        int startYear = currYear - before;
+        int endYear = currYear + behind;
+        for (int i = startYear; i < endYear; i++) {
+            list.add(Integer.valueOf(i));
+        }
+        return list;
+    }
+
+
+    public static Integer getWeekthOfYear(Date date) {
+        Calendar c = new GregorianCalendar();
+        c.setFirstDayOfWeek(Calendar.MONDAY);
+        c.setMinimalDaysInFirstWeek(7);
+        c.setTime(date);
+
+        return c.get(Calendar.WEEK_OF_YEAR);
+    }
+
+    public static HashMap<Integer, String> getWeekTimeOfYear(int year) {
+        HashMap<Integer, String> map = new LinkedHashMap<Integer, String>();
+        Calendar c = new GregorianCalendar();
+        c.set(year, Calendar.DECEMBER, 31, 23, 59, 59);
+        int count = getWeekthOfYear(c.getTime());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String dayOfWeekStart = "";
+        String dayOfWeekEnd = "";
+        for (int i = 1; i <= count; i++) {
+            dayOfWeekStart = sdf.format(getFirstDayOfWeek(year, i));
+            dayOfWeekEnd = sdf.format(getLastDayOfWeek(year, i));
+            map.put(Integer.valueOf(i), "第" + i + "周(从" + dayOfWeekStart + "至" + dayOfWeekEnd + ")");
+        }
+        return map;
+
+    }
+
+    public static Integer getWeekCountOfYear(int year) {
+        Calendar c = new GregorianCalendar();
+        c.set(year, Calendar.DECEMBER, 31, 23, 59, 59);
+        int count = getWeekthOfYear(c.getTime());
+        return count;
+    }
+
+
+    public static Date getFirstDayOfWeek(Date date) {
+        Calendar c = new GregorianCalendar();
+        c.setFirstDayOfWeek(Calendar.MONDAY);
+        c.setTime(date);
+        c.set(Calendar.DAY_OF_WEEK, c.getFirstDayOfWeek()); // Monday
+        return c.getTime();
+    }
+
+    public static Date getLastDayOfWeek(Date date) {
+        Calendar c = new GregorianCalendar();
+        c.setFirstDayOfWeek(Calendar.MONDAY);
+        c.setTime(date);
+        c.set(Calendar.DAY_OF_WEEK, c.getFirstDayOfWeek() + 6); // Sunday
+        return c.getTime();
+    }
+
+
+    public static Date getFirstDayOfWeek(int year, int week) {
+        Calendar c = new GregorianCalendar();
+        c.set(Calendar.YEAR, year);
+        c.set(Calendar.MONTH, Calendar.JANUARY);
+        c.set(Calendar.DATE, 1);
+
+        Calendar cal = (GregorianCalendar) c.clone();
+        cal.add(Calendar.DATE, week * 7);
+
+        return getFirstDayOfWeek(cal.getTime());
+    }
+
+
+    public static Date getLastDayOfWeek(int year, int week) {
+        Calendar c = new GregorianCalendar();
+        c.set(Calendar.YEAR, year);
+        c.set(Calendar.MONTH, Calendar.JANUARY);
+        c.set(Calendar.DATE, 1);
+
+        Calendar cal = (GregorianCalendar) c.clone();
+        cal.add(Calendar.DATE, week * 7);
+
+        return getLastDayOfWeek(cal.getTime());
+    }
+
+    public static Date getFirstDayOfMonth(int year, int month) {
+        month = month - 1;
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.YEAR, year);
+        c.set(Calendar.MONTH, month);
+
+        int day = c.getActualMinimum(c.DAY_OF_MONTH);
+
+        c.set(Calendar.DAY_OF_MONTH, day);
+        c.set(Calendar.HOUR_OF_DAY, 0);
+        c.set(Calendar.MINUTE, 0);
+        c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
+        return c.getTime();
+    }
+
+    public static Date getLastDayOfMonth(int year, int month) {
+        month = month - 1;
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.YEAR, year);
+        c.set(Calendar.MONTH, month);
+        int day = c.getActualMaximum(c.DAY_OF_MONTH);
+        c.set(Calendar.DAY_OF_MONTH, day);
+        c.set(Calendar.HOUR_OF_DAY, 23);
+        c.set(Calendar.MINUTE, 59);
+        c.set(Calendar.SECOND, 59);
+        c.set(Calendar.MILLISECOND, 999);
+        return c.getTime();
+    }
+
+    public static String getDayWeekOfDate1(Date date) {
+        String[] weekDays = {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+
+        int w = cal.get(Calendar.DAY_OF_WEEK) - 1;
+        if (w < 0)
+            w = 0;
+
+        return weekDays[w];
+    }
+
+
+    public static Integer getDayWeekOfDate2(Date date) {
+        Calendar aCalendar = Calendar.getInstance();
+        aCalendar.setTime(date);
+        int weekDay = aCalendar.get(Calendar.DAY_OF_WEEK);
+        return weekDay;
+    }
+
+
+    public static boolean validateIsDate(String strTime) {
+        if (strTime == null || strTime.trim().length() <= 0)
+            return false;
+
+        Date date = null;
+        List<String> list = new ArrayList<String>(0);
+
+        list.add(DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI_SS);
+        list.add(DATE_TIME_FORMAT_YYYYMMDDHHMISSSSS);
+        list.add(DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI);
+        list.add(DATE_TIME_FORMAT_YYYYMMDD_HH_MI);
+        list.add(DATE_TIME_FORMAT_YYYYMMDDHHMISS);
+        list.add(DATE_FORMAT_YYYY_MM_DD);
+        //list.add(DATE_FORMAT_YY_MM_DD);
+        list.add(DATE_FORMAT_YYYYMMDD);
+        //list.add(DATE_FORMAT_YYYY_MM);
+        //list.add(DATE_FORMAT_YYYYMM);
+        //list.add(DATE_FORMAT_YYYY);
+
+        for (Iterator iter = list.iterator(); iter.hasNext(); ) {
+            String format = (String) iter.next();
+            if (strTime.indexOf("-") > 0 && format.indexOf("-") < 0)
+                continue;
+            if (strTime.indexOf("-") < 0 && format.indexOf("-") > 0)
+                continue;
+            if (strTime.length() > format.length())
+                continue;
+            date = parseStrToDate(strTime.trim(), format);
+            if (date != null)
+                break;
+        }
+
+        if (date != null) {
+            System.out.println("生成的日期:" + DateUtil.parseDateToStr(date, DateUtil.DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI_SS, "--null--"));
+            return true;
+        }
+        return false;
+    }
+
+    public static Date formatHhMmSsOfDate(Date date) {
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        return cal.getTime();
+    }
+
+
+    public static Date addDate(Date date, int year, int month, int day, int hour, int minute, int second, int millisecond) {
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.add(Calendar.YEAR, year);//加减年数
+        c.add(Calendar.MONTH, month);//加减月数
+        c.add(Calendar.DATE, day);//加减天数
+        c.add(Calendar.HOUR, hour);//加减小时数
+        c.add(Calendar.MINUTE, minute);//加减分钟数
+        c.add(Calendar.SECOND, second);//加减秒
+        c.add(Calendar.MILLISECOND, millisecond);//加减毫秒数
+
+        return c.getTime();
+    }
+
+    public static Long getDistanceTimestamp(Date startDate, Date endDate) {
+        long daysBetween = (endDate.getTime() - startDate.getTime() + 1000000) / (3600 * 24 * 1000);
+        return daysBetween;
+    }
+
+    public static Boolean compareIsSameMonth(Date date1, Date date2) {
+        boolean flag = false;
+        int year1 = getYear(date1);
+        int year2 = getYear(date2);
+        if (year1 == year2) {
+            int month1 = getMonth(date1);
+            int month2 = getMonth(date2);
+            if (month1 == month2) flag = true;
+        }
+        return flag;
+    }
+
+    public static long[] getDistanceTime(Date one, Date two) {
+        long day = 0;
+        long hour = 0;
+        long min = 0;
+        long sec = 0;
+        try {
+
+            long time1 = one.getTime();
+            long time2 = two.getTime();
+            long diff;
+            if (time1 < time2) {
+                diff = time2 - time1;
+            } else {
+                diff = time1 - time2;
+            }
+            day = diff / (24 * 60 * 60 * 1000);
+            hour = (diff / (60 * 60 * 1000) - day * 24);
+            min = ((diff / (60 * 1000)) - day * 24 * 60 - hour * 60);
+            sec = (diff / 1000 - day * 24 * 60 * 60 - hour * 60 * 60 - min * 60);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        long[] times = {day, hour, min, sec};
+        return times;
+    }
+
+    public static long[] getDistanceTime(String str1, String str2) {
+        DateFormat df = new SimpleDateFormat(DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI_SS);
+        Date one;
+        Date two;
+        long day = 0;
+        long hour = 0;
+        long min = 0;
+        long sec = 0;
+        try {
+            one = df.parse(str1);
+            two = df.parse(str2);
+            long time1 = one.getTime();
+            long time2 = two.getTime();
+            long diff;
+            if (time1 < time2) {
+                diff = time2 - time1;
+            } else {
+                diff = time1 - time2;
+            }
+            day = diff / (24 * 60 * 60 * 1000);
+            hour = (diff / (60 * 60 * 1000) - day * 24);
+            min = ((diff / (60 * 1000)) - day * 24 * 60 - hour * 60);
+            sec = (diff / 1000 - day * 24 * 60 * 60 - hour * 60 * 60 - min * 60);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        long[] times = {day, hour, min, sec};
+        return times;
+    }
+
+
+    public static Long getDistanceDays(String str1, String str2) throws Exception {
+        DateFormat df = new SimpleDateFormat(DATE_TIME_FORMAT_YYYY_MM_DD_HH_MI_SS);
+        Date one;
+        Date two;
+        long days = 0;
+        try {
+            one = df.parse(str1);
+            two = df.parse(str2);
+            long time1 = one.getTime();
+            long time2 = two.getTime();
+            long diff;
+            if (time1 < time2) {
+                diff = time2 - time1;
+            } else {
+                diff = time1 - time2;
+            }
+            days = diff / (1000 * 60 * 60 * 24);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return days;
+    }
+
+
+    public static Date getDayBeginTime(final Date date) {
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.set(Calendar.HOUR_OF_DAY, 0);
+        c.set(Calendar.MINUTE, 0);
+        c.set(Calendar.SECOND, 0);
+        c.set(Calendar.MILLISECOND, 0);
+        return c.getTime();
+    }
+
+    public static Date getDayEndTime(final Date date) {
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.set(Calendar.HOUR_OF_DAY, 23);
+        c.set(Calendar.MINUTE, 59);
+        c.set(Calendar.SECOND, 59);
+        c.set(Calendar.MILLISECOND, 999);
+        return c.getTime();
+    }
+
+
+    public static void main(String[] args) {
+        try {
+            DateUtil dateUtil = new DateUtil();
+            System.out.println();
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
+    }
+}

@@ -24,7 +24,7 @@
     <prudent>true</prudent>
   </appender>
 
-  <appender name="V_LOG" class="io.github.vlog.logback.appender.RollingFileTraceAppender">
+  <appender name="V_LOG" class="io.github.luons.vlog.logback.appender.RollingFileTraceAppender">
     <appName>V_LOG</appName>
     <packageName>io.github.vlog.demo</packageName>
     <encoder>
@@ -46,14 +46,16 @@
     <prudent>true</prudent>
   </appender>
 
-  <appender name="plumelog" class="io.github.vlog.logback.appender.KafkaAppender">
+  <appender name="plumelog" class="io.github.luons.vlog.logback.appender.KafkaTraceAppender">
     <appName>plumelog</appName>
     <kafkaHosts>localhost:9092</kafkaHosts>
+    <kafkaTopic>kafka-test</kafkaTopic>
   </appender>
 
   <!-- 日志输出级别 -->
   <root level="INFO">
     <appender-ref ref="V_LOG"/>
     <appender-ref ref="FILE_INFO"/>
+    <appender-ref ref="plumelog"/>
   </root>
 </configuration>

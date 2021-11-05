@@ -1,0 +1,885 @@
+[ INFO ][2021-11-04T20:51:46.102+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636030305621,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T20:51:45.621+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T20:51:55.227+0800][LogTest:19] - null
+[ INFO ][2021-11-04T20:51:56.275+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636030316268,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211334394823184384"}
+[ INFO ][2021-11-04T20:51:56.268+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T20:52:35.657+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636030355064,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T20:52:35.064+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T20:52:38.083+0800][LogTest:19] - null
+[ INFO ][2021-11-04T20:52:39.878+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636030359871,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211334573651529728"}
+[ INFO ][2021-11-04T20:52:39.871+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:19:08.019+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636039147613,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:19:07.613+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:19:08.023+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:19:08.028+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636039148023,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211371443135582208"}
+[ INFO ][2021-11-04T23:19:08.023+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:19:14.125+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636039153434,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:19:13.434+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:19:22.711+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:19:22.727+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636039162712,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211371504737325056"}
+[ INFO ][2021-11-04T23:19:22.712+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:25:50.124+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636039549519,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:25:49.519+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:25:50.128+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:25:50.137+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636039550128,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211373129686192128"}
+[ INFO ][2021-11-04T23:25:50.128+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:26:09.927+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636039569114,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:26:09.114+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:27:07.469+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:27:07.479+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636039627470,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211373454077857792"}
+[ INFO ][2021-11-04T23:27:07.470+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:28:33.682+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636039712667,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:28:32.667+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:28:46.354+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:28:47.605+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636039727605,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211373866520547328"}
+[ INFO ][2021-11-04T23:28:47.605+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:28:49.054+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-4
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:28:49.054+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:28:49.054+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:28:49.054+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:28:50.187+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:28:50.190+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:28:50.190+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636039730181
+[ INFO ][2021-11-04T23:28:50.239+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:28:50.240+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:28:50.241+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636039730181
+[ INFO ][2021-11-04T23:28:50.244+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:28:50.245+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:28:50.246+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636039730181
+[ INFO ][2021-11-04T23:28:50.250+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:28:50.251+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:28:50.254+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636039730181
+[ INFO ][2021-11-04T23:28:51.069+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-2] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:28:51.070+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-3] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:28:51.072+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-4] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:28:51.072+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-1] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:43:03.497+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636040582778,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:43:02.778+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:43:58.808+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:43:58.811+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636040638810,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211377695936876544"}
+[ INFO ][2021-11-04T23:43:58.810+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:43:58.878+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:43:58.878+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:43:58.878+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:43:58.880+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-4
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:44:02.679+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:44:28.927+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:44:30.547+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636040642668
+[ INFO ][2021-11-04T23:44:31.719+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:44:40.948+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:44:58.057+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636040642668
+[ INFO ][2021-11-04T23:45:03.475+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:45:05.049+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:45:08.295+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636040642668
+[ INFO ][2021-11-04T23:45:40.702+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:45:42.638+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:45:44.201+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636040642669
+[ INFO ][2021-11-04T23:45:45.652+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-4] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:45:45.652+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-2] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:45:45.652+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-1] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:45:45.652+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-3] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:57:34.877+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"begin to start write log","dtTime":1636041454369,"isJson":0,"logLevel":"INFO","method":"main","serverName":"172.17.54.33"}
+[ INFO ][2021-11-04T23:57:34.369+0800][LogTest:14] - begin to start write log
+[ INFO ][2021-11-04T23:58:32.707+0800][LogTest:19] - null
+[ INFO ][2021-11-04T23:58:42.036+0800][-LOG_WATCH-:169] - {"appName":"V_LOG","className":"LogTest","content":"{\"name\": 123}","dtTime":1636041522036,"isJson":1,"logLevel":"INFO","method":"main","serverName":"172.17.54.33","traceId":"211381361339142144"}
+[ INFO ][2021-11-04T23:58:42.036+0800][LogTest:25] - {"name": 123}
+[ INFO ][2021-11-04T23:58:57.271+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:58:57.271+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-4
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:58:57.271+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:58:57.271+0800][org.apache.kafka.clients.producer.ProducerConfig:347] - ProducerConfig values: 
+	acks = 0
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 10
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[ INFO ][2021-11-04T23:58:58.006+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:58:58.009+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:58:58.009+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636041537991
+[ INFO ][2021-11-04T23:58:58.012+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:58:58.012+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:58:58.012+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636041537991
+[ INFO ][2021-11-04T23:58:58.014+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:58:58.015+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:58:58.015+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636041537991
+[ INFO ][2021-11-04T23:58:58.016+0800][org.apache.kafka.common.utils.AppInfoParser:117] - Kafka version: 2.5.0
+[ INFO ][2021-11-04T23:58:58.016+0800][org.apache.kafka.common.utils.AppInfoParser:118] - Kafka commitId: 66563e712b0b9f84
+[ INFO ][2021-11-04T23:58:58.016+0800][org.apache.kafka.common.utils.AppInfoParser:119] - Kafka startTimeMs: 1636041537991
+[ INFO ][2021-11-04T23:58:58.324+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-2] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:58:58.324+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-3] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:58:58.324+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-1] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
+[ INFO ][2021-11-04T23:58:58.324+0800][org.apache.kafka.clients.Metadata:280] - [Producer clientId=producer-4] Cluster ID: S_Z3HK6rS5-V2_hTUhVO_w
